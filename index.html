@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copiar Texto</title>
+    <title>Vídeo na Página do GitHub</title>
     <style>
         body {
             margin: 0;
@@ -59,18 +59,26 @@
             font-size: 16px;
             color: green;
         }
+
+        video {
+            width: 80%;
+            max-width: 600px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
-   <video controls>
-            <source src="enchente.mp4" type="video/mp4">
-            Seu navegador não suporta o elemento de vídeo.
-        </video>
     <div class="container">
         <h1>Copiar Texto</h1>
         <textarea id="textToCopy" rows="4" cols="50">Este é o texto que você pode copiar.</textarea>
         <button onclick="copyText()">Copiar Texto</button>
         <p id="message"></p>
+        <video controls>
+            <source src="enchente.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
     </div>
     <script>
         function copyText() {
