@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeo na Página do GitHub</title>
+    <title>Ajude minha familia na enchente!</title>
     <style>
         body {
             margin: 0;
@@ -80,7 +80,7 @@
 </head>
 <body>
     <div class="container">
-        <video autoplay muted loop>
+        <video id="video" autoplay muted loop>
             <source src="enchente.mp4" type="video/mp4">
             Seu navegador não suporta o elemento de vídeo.
         </video>
@@ -92,6 +92,9 @@
         </div>
     </div>
     <script>
+        // Define a velocidade de reprodução do vídeo
+        document.getElementById('video').playbackRate = 0.5; // Reproduz a 50% da velocidade normal
+
         function copyText() {
             var textToCopy = document.getElementById("textToCopy");
             textToCopy.select();
