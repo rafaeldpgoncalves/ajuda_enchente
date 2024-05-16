@@ -74,7 +74,7 @@
         #message {
             margin-top: 20px;
             font-size: 16px;
-            color: green;
+            color: white;
         }
     </style>
 </head>
@@ -85,9 +85,11 @@
             Seu navegador não suporta o elemento de vídeo.
         </video>
         <div class="overlay">
-            <h1>Copiar Texto</h1>
-            <textarea id="textToCopy" rows="4" cols="50">Este é o texto que você pode copiar.</textarea>
-            <button onclick="copyText()">Copiar Texto</button>
+            <h1>Chave pix abaixo!</h1>
+            <a>Titular: Rafael de Paula Gonçalves</a>
+            <a>Qualquer valor é muito bem vindo. Obrigado!</a>
+            <textarea id="textToCopy" rows="4" cols="50">51980556184</textarea>
+            <button onclick="copyText()">Copiar Chave Pix</button>
             <p id="message"></p>
         </div>
     </div>
@@ -102,9 +104,9 @@
 
             try {
                 document.execCommand("copy");
-                document.getElementById("message").textContent = "Texto copiado com sucesso!";
+                document.getElementById("message").textContent = "Chave Pix copiada com Sucesso!";
             } catch (err) {
-                document.getElementById("message").textContent = "Falha ao copiar o texto.";
+                document.getElementById("message").textContent = "Falha ao Chave Pix.";
             }
         }
     </script>
