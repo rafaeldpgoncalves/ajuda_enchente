@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajude minha familia na enchente!</title>
+    <title>Ajude minha família na enchente!</title>
     <style>
         body {
             margin: 0;
@@ -42,18 +42,24 @@
         }
 
         h1 {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             color: white;
         }
 
-        textarea {
-            width: 80%;
-            max-width: 600px;
-            margin-bottom: 20px;
+        p, a {
+            margin: 5px 0;
+            font-size: 16px;
+            color: white;
+        }
+
+        input[type="text"] {
+            width: 250px;
             padding: 10px;
             font-size: 16px;
+            margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            text-align: center;
         }
 
         button {
@@ -72,7 +78,7 @@
         }
 
         #message {
-            margin-top: 20px;
+            margin-top: 10px;
             font-size: 16px;
             color: white;
         }
@@ -88,7 +94,7 @@
             <h1>Chave pix abaixo!</h1>
             <a>Titular: Rafael de Paula Gonçalves</a>
             <a>Qualquer valor é muito bem vindo. Obrigado!</a>
-            <textarea id="textToCopy" rows="4" cols="50">51980556184</textarea>
+            <input type="text" id="textToCopy" value="51980556184" readonly>
             <button onclick="copyText()">Copiar Chave Pix</button>
             <p id="message"></p>
         </div>
@@ -104,9 +110,9 @@
 
             try {
                 document.execCommand("copy");
-                document.getElementById("message").textContent = "Chave Pix copiada com Sucesso!";
+                document.getElementById("message").textContent = "Chave Pix copiada com sucesso!";
             } catch (err) {
-                document.getElementById("message").textContent = "Falha ao Chave Pix.";
+                document.getElementById("message").textContent = "Falha ao copiar a chave Pix.";
             }
         }
     </script>
